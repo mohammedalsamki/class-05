@@ -7,8 +7,8 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sum(a, b, c=0) { //eslint-disable-line
-    var totalSum = a + b + c;
-    var string = 'The sum of ' + a + ' and ' + b + ' is ' + totalSum + '.';
+    let totalSum = a + b + c;
+    let string = 'The sum of ' + a + ' and ' + b + ' is ' + totalSum + '.';
     return [totalSum, string, c];
   }
 
@@ -25,9 +25,9 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b, c=1) { //eslint-disable-line
-    var product = a * b * c;
+    let product = a * b * c;
   
-    var productString = 'The product of ' + a + ' and ' + b + ' is 45.';
+    let productString = 'The product of ' + a + ' and ' + b + ' is 45.';
     return  [product, productString];
   }
 
@@ -46,11 +46,11 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-    var tripleSum = sum(a,b,c)[0];
-    var tripleProduct = multiply(a,b,c)[0];
+    let tripleSum = sum(a,b,c)[0];
+    let tripleProduct = multiply(a,b,c)[0];
   
-    var stringTripleSum = (a + ' and ' + b + ' and ' + c + ' sum to ' + tripleSum + '.');
-    var stringTripleProduct = ('The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + tripleProduct + '.');
+    let stringTripleSum = (a + ' and ' + b + ' and ' + c + ' sum to ' + tripleSum + '.');
+    let stringTripleProduct = ('The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + tripleProduct + '.');
   
     
     // console.log(tripleSum);
@@ -98,8 +98,7 @@ function sumArray(sumArr) { //eslint-disable-line
 
 // Here is the test for sumArray(); uncomment it to run it
 
- testSumArray(testArray);
-
+testSumArray(testArray);
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
 /////////////////////////////////////
